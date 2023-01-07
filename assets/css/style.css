@@ -1,0 +1,166 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    line-height: 1.7;
+}
+
+.section-padding {
+    padding-top: 80px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.border-hover {
+    border: 2px solid var(--bs-info);
+}
+
+
+
+
+.wrapper,
+.wrapper .img-area,
+.social-icons a
+{
+  background: var(--bs-body-bg);
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+.buttons button{
+    background: var(--bs-body-bg);
+    box-shadow: -3px -3px 7px #ecf0f3,3px 3px 5px #ceced1;
+}
+.wrapper{
+  /* position: relative; */
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.wrapper .img-area{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area{
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.wrapper .name{
+  font-size: 25px;
+  font-weight: bold;
+  /* margin: 10px 0 0 0; */
+}
+.wrapper .about h4{
+  color: #485785;
+  font-weight: 700;
+  font-size: 18px;
+  
+}
+
+.social-icons a:hover::before,
+.wrapper .icon:hover::before,
+.buttons button:hover:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+.buttons button:hover:before{
+  z-index: -1;
+  border-radius: 5px;
+}
+
+
+.wrapper .buttons{
+  width: 100%;
+}
+.buttons button{
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+  margin-top: 10px;
+}
+.buttons p{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #485785;
+}
+.buttons .college{
+  display: flex;
+  /* margin-bottom: 20px; */
+}
+.college .image{
+  flex-basis: 30%;
+  
+}
+.college .text{
+  flex-basis: 70%;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.college .image img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.buttons .work{
+  display: flex;
+}
+.work .image{
+  flex-basis: 30%;
+}
+.work .image img{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work .text{
+  flex-basis: 70%;
+  text-align: center; 
+  margin-left: 10px;
+}
+.btn-info{
+  font-size: 15px;
+  border-radius: 15%;
+  background-color: #ecf0f3;
+}
+.btn-outline-info{
+  border-radius: 10%;
+}
